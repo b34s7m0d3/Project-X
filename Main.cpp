@@ -18,4 +18,5 @@ int main() {
        TCODConsole::flush();
    }
    return 0;
+
 }

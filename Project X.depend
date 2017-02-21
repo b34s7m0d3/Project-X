@@ -1,7 +1,6 @@
 # depslib dependency file v1.0
-1487704186 source:g:\mystuff\documents\petermehlmann\rpg game\project x\main.cpp
+1487706610 source:g:\mystuff\documents\petermehlmann\rpg game\project x\main.cpp
 	"libtcod.hpp"
-	"stdio.h"
 
 1486915135 g:\mystuff\documents\petermehlmann\rpg game\libtcod\libtcod-1.5.1\include\libtcod.hpp
 	"libtcod.h"
