@@ -1,6 +1,9 @@
 # depslib dependency file v1.0
-1487706610 source:g:\mystuff\documents\petermehlmann\rpg game\project x\main.cpp
+1487794538 source:g:\mystuff\documents\petermehlmann\rpg game\project x\main.cpp
 	"libtcod.hpp"
+	"Actor.hpp"
+	"Map.hpp"
+	"Engine.hpp"
 
 1486915135 g:\mystuff\documents\petermehlmann\rpg game\libtcod\libtcod-1.5.1\include\libtcod.hpp
 	"libtcod.h"
@@ -437,4 +440,24 @@
 
 1487706222 g:\mystuff\documents\petermehlmann\rpg game\libtcod\libtcod-1.5.2\include\txtfield.hpp
 	"color.hpp"
+
+1487789872 source:g:\mystuff\documents\petermehlmann\rpg game\project x\actor.cpp
+	"libtcod.hpp"
+	"Actor.hpp"
+
+1487794624 g:\mystuff\documents\petermehlmann\rpg game\project x\actor.hpp
+
+1487794579 source:g:\mystuff\documents\petermehlmann\rpg game\project x\engine.cpp
+	"libtcod.hpp"
+	"Actor.hpp"
+	"Map.hpp"
+	"Engine.hpp"
+
+1487789970 g:\mystuff\documents\petermehlmann\rpg game\project x\map.hpp
+
+1487792836 g:\mystuff\documents\petermehlmann\rpg game\project x\engine.hpp
+
+1487794588 source:g:\mystuff\documents\petermehlmann\rpg game\project x\map.cpp
+	"libtcod.hpp"
+	"Map.hpp"
 
