@@ -1,9 +1,6 @@
 # depslib dependency file v1.0
-1487794538 source:g:\mystuff\documents\petermehlmann\rpg game\project x\main.cpp
-	"libtcod.hpp"
-	"Actor.hpp"
-	"Map.hpp"
-	"Engine.hpp"
+1488106948 source:g:\mystuff\documents\petermehlmann\rpg game\project x\main.cpp
+	"main.hpp"
 
 1486915135 g:\mystuff\documents\petermehlmann\rpg game\libtcod\libtcod-1.5.1\include\libtcod.hpp
 	"libtcod.h"
@@ -441,31 +438,29 @@
 1487706222 g:\mystuff\documents\petermehlmann\rpg game\libtcod\libtcod-1.5.2\include\txtfield.hpp
 	"color.hpp"
 
-1488106650 source:g:\mystuff\documents\petermehlmann\rpg game\project x\actor.cpp
+1488107272 source:g:\mystuff\documents\petermehlmann\rpg game\project x\actor.cpp
 	"main.hpp"
 
 1488106543 g:\mystuff\documents\petermehlmann\rpg game\project x\actor.hpp
 
-1488106858 source:g:\mystuff\documents\petermehlmann\rpg game\project x\engine.cpp
+1488120480 source:g:\mystuff\documents\petermehlmann\rpg game\project x\engine.cpp
 	"main.hpp"
 
-1488106935 g:\mystuff\documents\petermehlmann\rpg game\project x\map.hpp
+1488107292 g:\mystuff\documents\petermehlmann\rpg game\project x\map.hpp
 
-1488106877 g:\mystuff\documents\petermehlmann\rpg game\project x\engine.hpp
+1488120442 g:\mystuff\documents\petermehlmann\rpg game\project x\engine.hpp
 
-1488026701 source:g:\mystuff\documents\petermehlmann\rpg game\project x\map.cpp
-	"libtcod.hpp"
-	"Map.hpp"
-	"Actor.hpp"
-	"Engine.hpp"
+1488120628 source:g:\mystuff\documents\petermehlmann\rpg game\project x\map.cpp
+	"main.hpp"
 
-1488106962 g:\mystuff\documents\petermehlmann\rpg game\project x\main.hpp
+1488122238 g:\mystuff\documents\petermehlmann\rpg game\project x\main.hpp
 	"libtcod.hpp"
 	"Destructible.hpp"
 	"Attacker.hpp"
 	"Ai.hpp"
 	"Actor.hpp"
 	"Map.hpp"
+	"Gui.hpp"
 	"Engine.hpp"
 
 1488106819 g:\mystuff\documents\petermehlmann\rpg game\project x\destructible.hpp
@@ -474,16 +469,23 @@
 
 1488106724 g:\mystuff\documents\petermehlmann\rpg game\project x\ai.hpp
 
-1488106682 source:g:\mystuff\documents\petermehlmann\rpg game\project x\ai.cpp
+1488119999 source:g:\mystuff\documents\petermehlmann\rpg game\project x\ai.cpp
 	<stdio.h>
 	<math.h>
 	"main.hpp"
 
-1488106752 source:g:\mystuff\documents\petermehlmann\rpg game\project x\attacker.cpp
+1488120014 source:g:\mystuff\documents\petermehlmann\rpg game\project x\attacker.cpp
 	<stdio.h>
 	"main.hpp"
 
-1488106800 source:g:\mystuff\documents\petermehlmann\rpg game\project x\destructible.cpp
+1488119990 source:g:\mystuff\documents\petermehlmann\rpg game\project x\destructible.cpp
 	<stdio.h>
 	"main.hpp"
+
+1488122473 g:\mystuff\documents\petermehlmann\rpg game\project x\gui.hpp
+
+1488122851 source:g:\mystuff\documents\petermehlmann\rpg game\project x\gui.cpp
+	<stdarg.h>
+	<stdio.h>
+	"Main.hpp"
 
