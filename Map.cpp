@@ -7,25 +7,28 @@ static const int MAX_ROOM_MONSTERS = 3;
 class BspListener : public ITCODBspCallback {
 private :
     Map &map; // a map to dig
+
     int roomNum; // room number
     int lastx,lasty; // center of the last room
+
 public :
     BspListener(Map &map) : map(map), roomNum(0) {}
-    bool visitNode(TCODBsp *node, void *userData) {
-    	if ( node->isLeaf() ) {
-    		int x,y,w,h;
-			// dig a room
-			TCODRandom *rng=TCODRandom::getInstance();
-			w=rng->getInt(ROOM_MIN_SIZE, node->w-2);
-			h=rng->getInt(ROOM_MIN_SIZE, node->h-2);
-			x=rng->getInt(node->x+1, node->x+node->w-w-1);
-			y=rng->getInt(node->y+1, node->y+node->h-h-1);
-			map.createRoom(roomNum == 0, x, y, x+w-1, y+h-1);
-			if ( roomNum != 0 ) {
-			    // dig a corridor from last room
-			    map.dig(lastx,lasty,x+w/2,lasty);
-			    map.dig(x+w/2,lasty,x+w/2,y+h/2);
-			}
+        bool visitNode(TCODBsp *node, void *userData) {
+            if ( node->isLeaf() ) {
+                int x,y,w,h;
+                // dig a room
+                TCODRandom *rng=TCODRandom::getInstance();
+                w=rng->getInt(ROOM_MIN_SIZE, node->w-2);
+                h=rng->getInt(ROOM_MIN_SIZE, node->h-2);
+                x=rng->getInt(node->x+1, node->x+node->w-w-1);
+                y=rng->getInt(node->y+1, node->y+node->h-h-1);
+                map.createRoom(roomNum == 0, x, y, x+w-1, y+h-1);
+
+                if ( roomNum != 0 ) {
+                    // dig a corridor from last room
+                    map.dig(lastx,lasty,x+w/2,lasty);
+                    map.dig(x+w/2,lasty,x+w/2,y+h/2);
+                }
             lastx=x+w/2;
             lasty=y+h/2;
             roomNum++;
@@ -38,6 +41,7 @@ Map::Map(int width, int height) : width(width),height(height) {
     tiles=new Tile[width*height];
     map=new TCODMap(width,height);
     TCODBsp bsp(0,0,width,height);
+
     bsp.splitRecursive(NULL,8,ROOM_MAX_SIZE,ROOM_MAX_SIZE,1.5f,1.5f);
     BspListener listener(*this);
     bsp.traverseInvertedLevelOrder(&listener,NULL);
@@ -70,16 +74,14 @@ void Map::addMonster(int x, int y) {
     TCODRandom *rng=TCODRandom::getInstance();
     if ( rng->getInt(0,100) < 80 ) {
         // create an orc
-        Actor *orc = new Actor(x,y,'o',"orc",
-            TCODColor::desaturatedGreen);
+        Actor *orc = new Actor(x,y,'o',"orc",TCODColor::desaturatedGreen);
         orc->destructible = new MonsterDestructible(10,0,"dead orc");
         orc->attacker = new Attacker(3);
         orc->ai = new MonsterAi();
         engine.actors.push(orc);
     } else {
         // create a troll
-        Actor *troll = new Actor(x,y,'T',"troll",
-             TCODColor::darkerGreen);
+        Actor *troll = new Actor(x,y,'T',"troll",TCODColor::darkerGreen);
         troll->destructible = new MonsterDestructible(16,1,"troll carcass");
         troll->attacker = new Attacker(4);
         troll->ai = new MonsterAi();
@@ -116,8 +118,7 @@ bool Map::canWalk(int x, int y) const {
         // this is a wall
         return false;
     }
-    for (Actor **iterator=engine.actors.begin();
-        iterator!=engine.actors.end();iterator++) {
+    for (Actor **iterator=engine.actors.begin(); iterator!=engine.actors.end();iterator++) {
         Actor *actor=*iterator;
         if ( actor->blocks && actor->x == x && actor->y == y ) {
             // there is a blocking actor here. cannot walk
@@ -140,8 +141,7 @@ bool Map::isInFov(int x, int y) const {
 }
 
 void Map::computeFov() {
-    map->computeFov(engine.player->x,engine.player->y,
-        engine.fovRadius);
+    map->computeFov(engine.player->x,engine.player->y, engine.fovRadius);
 }
 
 void Map::render() const {
@@ -153,11 +153,9 @@ void Map::render() const {
 	for (int x=0; x < width; x++) {
 	    for (int y=0; y < height; y++) {
 	        if ( isInFov(x,y) ) {
-	            TCODConsole::root->setCharBackground(x,y,
-	                isWall(x,y) ? lightWall :lightGround );
+	            TCODConsole::root->setCharBackground(x,y, isWall(x,y) ? lightWall :lightGround );
 	        } else if ( isExplored(x,y) ) {
-	            TCODConsole::root->setCharBackground(x,y,
-	                isWall(x,y) ? darkWall : darkGround );
+	            TCODConsole::root->setCharBackground(x,y, isWall(x,y) ? darkWall : darkGround );
 	        }
    	    }
 	}

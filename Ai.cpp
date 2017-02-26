@@ -72,8 +72,7 @@ bool PlayerAi::moveOrAttack(Actor *owner, int targetx,int targety) {
 	for (Actor **iterator=engine.actors.begin();
 		iterator != engine.actors.end(); iterator++) {
 		Actor *actor=*iterator;
-		if ( actor->destructible && !actor->destructible->isDead()
-			 && actor->x == targetx && actor->y == targety ) {
+		if ( actor->destructible && !actor->destructible->isDead() && actor->x == targetx && actor->y == targety ) {
 			owner->attacker->attack(owner, actor);
 			return false;
 		}
@@ -82,8 +81,7 @@ bool PlayerAi::moveOrAttack(Actor *owner, int targetx,int targety) {
 	for (Actor **iterator=engine.actors.begin();
 		iterator != engine.actors.end(); iterator++) {
 		Actor *actor=*iterator;
-		if ( actor->destructible && actor->destructible->isDead()
-			 && actor->x == targetx && actor->y == targety ) {
+		if ( actor->destructible && actor->destructible->isDead() && actor->x == targetx && actor->y == targety ) {
 			printf ("There's a %s here\n",actor->name);
 		}
 	}
