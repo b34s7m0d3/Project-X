@@ -44,9 +44,16 @@
 		</Compiler>
 		<Unit filename="Actor.cpp" />
 		<Unit filename="Actor.hpp" />
+		<Unit filename="Ai.cpp" />
+		<Unit filename="Ai.hpp" />
+		<Unit filename="Attacker.cpp" />
+		<Unit filename="Attacker.hpp" />
+		<Unit filename="Destructible.cpp" />
+		<Unit filename="Destructible.hpp" />
 		<Unit filename="Engine.cpp" />
 		<Unit filename="Engine.hpp" />
 		<Unit filename="Main.cpp" />
+		<Unit filename="Main.hpp" />
 		<Unit filename="Map.cpp" />
 		<Unit filename="Map.hpp" />
 		<Extensions>

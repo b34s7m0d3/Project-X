@@ -441,28 +441,49 @@
 1487706222 g:\mystuff\documents\petermehlmann\rpg game\libtcod\libtcod-1.5.2\include\txtfield.hpp
 	"color.hpp"
 
-1488025653 source:g:\mystuff\documents\petermehlmann\rpg game\project x\actor.cpp
+1488106650 source:g:\mystuff\documents\petermehlmann\rpg game\project x\actor.cpp
+	"main.hpp"
+
+1488106543 g:\mystuff\documents\petermehlmann\rpg game\project x\actor.hpp
+
+1488106858 source:g:\mystuff\documents\petermehlmann\rpg game\project x\engine.cpp
+	"main.hpp"
+
+1488106935 g:\mystuff\documents\petermehlmann\rpg game\project x\map.hpp
+
+1488106877 g:\mystuff\documents\petermehlmann\rpg game\project x\engine.hpp
+
+1488026701 source:g:\mystuff\documents\petermehlmann\rpg game\project x\map.cpp
+	"libtcod.hpp"
+	"Map.hpp"
+	"Actor.hpp"
+	"Engine.hpp"
+
+1488106962 g:\mystuff\documents\petermehlmann\rpg game\project x\main.hpp
+	"libtcod.hpp"
+	"Destructible.hpp"
+	"Attacker.hpp"
+	"Ai.hpp"
+	"Actor.hpp"
+	"Map.hpp"
+	"Engine.hpp"
+
+1488106819 g:\mystuff\documents\petermehlmann\rpg game\project x\destructible.hpp
+
+1488106767 g:\mystuff\documents\petermehlmann\rpg game\project x\attacker.hpp
+
+1488106724 g:\mystuff\documents\petermehlmann\rpg game\project x\ai.hpp
+
+1488106682 source:g:\mystuff\documents\petermehlmann\rpg game\project x\ai.cpp
 	<stdio.h>
-	"libtcod.hpp"
-	"Actor.hpp"
-	"Map.hpp"
-	"Engine.hpp"
+	<math.h>
+	"main.hpp"
 
-1488025228 g:\mystuff\documents\petermehlmann\rpg game\project x\actor.hpp
+1488106752 source:g:\mystuff\documents\petermehlmann\rpg game\project x\attacker.cpp
+	<stdio.h>
+	"main.hpp"
 
-1488026522 source:g:\mystuff\documents\petermehlmann\rpg game\project x\engine.cpp
-	"libtcod.hpp"
-	"Actor.hpp"
-	"Map.hpp"
-	"Engine.hpp"
-
-1488024308 g:\mystuff\documents\petermehlmann\rpg game\project x\map.hpp
-
-1488025747 g:\mystuff\documents\petermehlmann\rpg game\project x\engine.hpp
-
-1488022459 source:g:\mystuff\documents\petermehlmann\rpg game\project x\map.cpp
-	"libtcod.hpp"
-	"Map.hpp"
-	"Actor.hpp"
-	"Engine.hpp"
+1488106800 source:g:\mystuff\documents\petermehlmann\rpg game\project x\destructible.cpp
+	<stdio.h>
+	"main.hpp"
 
