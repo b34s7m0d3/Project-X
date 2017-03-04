@@ -24,3 +24,12 @@ protected :
     void handleActionKey(Actor *owner, int ascii);
 	Actor *choseFromInventory(Actor *owner);
 };
+
+class ConfusedMonsterAi : public Ai{
+public:
+    ConfusedMonsterAi(int nbTurns, Ai *oldAi);
+    void update (Actor *owner);
+protected:
+    int nbTurns;
+    Ai *oldAi;
+};

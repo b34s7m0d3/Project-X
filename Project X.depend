@@ -438,19 +438,20 @@
 1487706222 g:\mystuff\documents\petermehlmann\rpg game\libtcod\libtcod-1.5.2\include\txtfield.hpp
 	"color.hpp"
 
-1488223471 source:g:\mystuff\documents\petermehlmann\rpg game\project x\actor.cpp
+1488574470 source:g:\mystuff\documents\petermehlmann\rpg game\project x\actor.cpp
 	"main.hpp"
+	"math.h"
 
-1488223377 g:\mystuff\documents\petermehlmann\rpg game\project x\actor.hpp
+1488574264 g:\mystuff\documents\petermehlmann\rpg game\project x\actor.hpp
 
-1488224390 source:g:\mystuff\documents\petermehlmann\rpg game\project x\engine.cpp
+1488585750 source:g:\mystuff\documents\petermehlmann\rpg game\project x\engine.cpp
 	"main.hpp"
 
 1488226007 g:\mystuff\documents\petermehlmann\rpg game\project x\map.hpp
 
-1488120442 g:\mystuff\documents\petermehlmann\rpg game\project x\engine.hpp
+1488584783 g:\mystuff\documents\petermehlmann\rpg game\project x\engine.hpp
 
-1488226551 source:g:\mystuff\documents\petermehlmann\rpg game\project x\map.cpp
+1488585308 source:g:\mystuff\documents\petermehlmann\rpg game\project x\map.cpp
 	"main.hpp"
 
 1488223270 g:\mystuff\documents\petermehlmann\rpg game\project x\main.hpp
@@ -469,9 +470,9 @@
 
 1488106767 g:\mystuff\documents\petermehlmann\rpg game\project x\attacker.hpp
 
-1488230478 g:\mystuff\documents\petermehlmann\rpg game\project x\ai.hpp
+1488585709 g:\mystuff\documents\petermehlmann\rpg game\project x\ai.hpp
 
-1488228451 source:g:\mystuff\documents\petermehlmann\rpg game\project x\ai.cpp
+1488585728 source:g:\mystuff\documents\petermehlmann\rpg game\project x\ai.cpp
 	<stdio.h>
 	<math.h>
 	"main.hpp"
@@ -491,13 +492,13 @@
 	<stdio.h>
 	"Main.hpp"
 
-1488225722 g:\mystuff\documents\petermehlmann\rpg game\project x\pickable.hpp
+1488585372 g:\mystuff\documents\petermehlmann\rpg game\project x\pickable.hpp
 
 1488223938 g:\mystuff\documents\petermehlmann\rpg game\project x\container.hpp
 
 1488224290 source:g:\mystuff\documents\petermehlmann\rpg game\project x\container.cpp
 	"Main.hpp"
 
-1488225897 source:g:\mystuff\documents\petermehlmann\rpg game\project x\pickable.cpp
+1488586005 source:g:\mystuff\documents\petermehlmann\rpg game\project x\pickable.cpp
 	"Main.hpp"
 

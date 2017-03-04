@@ -5,6 +5,8 @@ public :
     TCODColor col; // color
     const char *name; // the actor's name
     bool blocks; // can we walk on this actor?
+
+
     Attacker *attacker; // something that deals damages
     Destructible *destructible; // something that can be damaged
     Ai *ai; // something self-updating
@@ -15,4 +17,5 @@ public :
 	~Actor();
 	void update();
     void render() const;
+    float getDistance(int cx, int cy) const;
 };
