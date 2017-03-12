@@ -124,3 +124,5 @@ void Gui::renderMouseLook() {
 	con->setDefaultForeground(TCODColor::lightGrey);
 	con->print(1,0,buf);
 }
+
+

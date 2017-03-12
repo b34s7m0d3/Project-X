@@ -60,6 +60,8 @@
 		<Unit filename="Main.hpp" />
 		<Unit filename="Map.cpp" />
 		<Unit filename="Map.hpp" />
+		<Unit filename="Persistent.cpp" />
+		<Unit filename="Persistent.hpp" />
 		<Unit filename="Pickable.cpp" />
 		<Unit filename="Pickable.hpp" />
 		<Extensions>
