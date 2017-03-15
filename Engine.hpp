@@ -31,6 +31,7 @@ public :
     void init();
     void load();
     void save();
+    void term();
 };
 
 extern Engine engine;

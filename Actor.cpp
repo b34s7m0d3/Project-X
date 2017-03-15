@@ -6,7 +6,7 @@ Actor::Actor(int x, int y, int ch, const char *name, const TCODColor &col) :
 }
 
 Actor::~Actor(){
-    if(attacker) delete attacker;
+    if (attacker) delete attacker;
     if (destructible) delete destructible;
     if (ai) delete ai;
     if (pickable) delete pickable;

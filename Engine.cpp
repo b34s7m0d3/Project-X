@@ -8,9 +8,14 @@ Engine::Engine(int screenWidth, int screenHeight) : gameStatus(STARTUP),player(N
 }
 
 Engine::~Engine() {
-    actors.clearAndDelete();
-    delete map;
+    term();
     delete gui;
+}
+
+void Engine::term(){
+    actors.clearAndDelete();
+    if (map) delete map;
+    gui->clear();
 }
 
 void Engine::init(){
@@ -23,13 +28,19 @@ void Engine::init(){
     map = new Map(80,43);
     map->init(true);
     gui->message(TCODColor::red, "Welcome stranger!\nPrepare to perish in the Church of the Forbidden Gods!");
-
+    gameStatus=STARTUP;
 }
 
 void Engine::update() {
 	if ( gameStatus == STARTUP ) map->computeFov();
    	gameStatus=IDLE;
     TCODSystem::checkForEvent(TCOD_EVENT_KEY_PRESS|TCOD_EVENT_MOUSE,&lastKey,&mouse);
+
+    if (lastKey.vk == TCODK_ESCAPE){
+        save();
+        load();
+    }
+
     player->update();
     if ( gameStatus == NEW_TURN ) {
 	    for (Actor **iterator=actors.begin(); iterator != actors.end(); iterator++) {
