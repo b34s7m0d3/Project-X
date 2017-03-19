@@ -2,7 +2,7 @@
 #include "math.h"
 
 Actor::Actor(int x, int y, int ch, const char *name, const TCODColor &col) :
-    x(x),y(y),ch(ch),col(col),name(name),blocks(true),attacker(NULL),destructible(NULL),ai(NULL),pickable(NULL),container(NULL) {
+    x(x),y(y),ch(ch),col(col),name(name),blocks(true),fovOnly(true),attacker(NULL),destructible(NULL),ai(NULL),pickable(NULL),container(NULL) {
 }
 
 Actor::~Actor(){

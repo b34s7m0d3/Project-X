@@ -113,7 +113,7 @@ Destructible *Destructible::create(TCODZip &zip) {
 	DestructibleType type=(DestructibleType)zip.getInt();
 	Destructible *destructible=NULL;
 	switch(type) {
-		case MONSTER : destructible=new MonsterDestructible(0,0,NULL); break;
+		case MONSTER : destructible=new MonsterDestructible(0,0,NULL,0); break;
 		case PLAYER : destructible=new PlayerDestructible(0,0,NULL); break;
 	}
 	destructible->load(zip);
@@ -264,8 +264,12 @@ void Engine::load() {
 		map->load(zip);
 		// then the player
 		player=new Actor(0,0,0,NULL,TCODColor::white);
-		player->load(zip);
 		actors.push(player);
+		player->load(zip);
+		// then the stairs
+		stairs=new Actor (0,0,0,NULL,TCODColor::white);
+		stairs->load(zip);
+		actors.push(stairs);
 		// then all other actors
 		int nbActors=zip.getInt();
 		while ( nbActors > 0 ) {
@@ -292,10 +296,12 @@ void Engine::save() {
 		map->save(zip);
 		// then the player
 		player->save(zip);
+		//then save the stairs
+		stairs->save(zip);
 		// then all the other actors
-		zip.putInt(actors.size()-1);
+		zip.putInt(actors.size()-2);
 		for (Actor **it=actors.begin(); it!=actors.end(); it++) {
-			if ( *it != player ) {
+			if ( *it != player && *it != stairs ) {
 				(*it)->save(zip);
 			}
 		}

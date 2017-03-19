@@ -12,11 +12,13 @@ public :
 	TCOD_mouse_t mouse;
     TCODList<Actor *> actors;
     Actor *player;
+    Actor *stairs;
     Map *map;
 
     int fovRadius;
     int screenWidth;
     int screenHeight;
+    int level;
     Gui *gui;
 
     Engine(int screenWidth, int screenHeight);
@@ -24,6 +26,7 @@ public :
 
     void update();
     void render();
+    void nextLevel();
     void sendToBack(Actor *actor);
     Actor *getClosestMonster(int x, int y, float range) const;
     Actor *getActor(int x, int y) const;
