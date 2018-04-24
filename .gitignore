@@ -29,3 +29,6 @@
 
 # VS specific
 *.vs
+
+# Folders not to be used
+Debug/
