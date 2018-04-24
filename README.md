@@ -14,3 +14,4 @@ After loading the file, Player level and dungeon level is not displayed correctl
 
 ## Next steps
 As a roadmap for the project I decided to have a server where the save files will be stored.
+Need to add Travis CI.
