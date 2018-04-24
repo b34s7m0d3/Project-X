@@ -20,9 +20,12 @@
 *.lai
 *.la
 *.a
-*.lib
+
 
 # Executables
 *.exe
 *.out
 *.app
+
+# VS specific
+*.vs
