@@ -11,7 +11,6 @@
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
 
 # Fortran module files
 *.mod
@@ -29,3 +28,5 @@
 
 # VS specific
 *.vs
+
+/Debug/*
