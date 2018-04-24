@@ -1,3 +1,5 @@
+[![Throughput Graph](https://graphs.waffle.io/b34s7m0d3/Project-X/throughput.svg)](https://waffle.io/b34s7m0d3/Project-X/metrics)
+
 #Project X
 My take on the rougelike genre.
 
