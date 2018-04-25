@@ -17,7 +17,7 @@ As a roadmap for the project I decided to have a server where the save files wil
 Need to add Travis CI.
 
 ## License
-Standard MIT License, can be found [here].(https://github.com/b34s7m0d3/Project-X/blob/master/LICENSE)
+Standard MIT License, can be found [here](https://github.com/b34s7m0d3/Project-X/blob/master/LICENSE).
 
 ## Contribution Guide
 Please follow the [Contribution Guide](https://github.com/b34s7m0d3/Project-X/blob/master/CONTRIBUTING.md) if you would like to help me out! (Thank you!)
