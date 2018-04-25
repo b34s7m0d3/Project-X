@@ -20,4 +20,4 @@ Need to add Travis CI.
 Standard MIT License, can be found [here].(https://github.com/b34s7m0d3/Project-X/blob/master/LICENSE)
 
 ## Contribution Guide
-Will follow.
+Please follow the [Contribution Guide](https://github.com/b34s7m0d3/Project-X/blob/master/CONTRIBUTING.md) if you would like to help me out! (Thank you!)
